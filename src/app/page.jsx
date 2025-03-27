@@ -28,9 +28,7 @@ export default function Home() {
           </p>
           <p className="text-base my-3">
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit,
-            magnam quis. Velit, dolorem corrupti expedita, repellendus quidem
-            ratione fugiat optio, deserunt delectus accusamus ut ex assumenda.
-            Dolorum dicta eaque modi!
+            magnam quis. Velit, dolorem. Lorem erw.
           </p>
           <button className="bg-gray-950 hover:bg-gray-900 transition-all cursor-pointer text-[whitesmoke] font-semibold px-2 py-1 rounded-full">
             Get Started
@@ -154,6 +152,16 @@ export default function Home() {
             </p>
           </div>
         </section>
+      </section>
+
+      {/* pricing */}
+      <section>
+        <p>Pricing section</p>
+      </section>
+
+      {/* last section */}
+      <section>
+        <p>Amobi Isidor Section</p>
       </section>
     </>
   );
