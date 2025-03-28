@@ -7,7 +7,7 @@ export default function Home() {
     <>
       {/* Header */}
       <header className="w-full fixed top-0 bg-[#fdfdfd] z-50 flex px-3 py-3  justify-between items-center">
-        <p className="font-bold">Logo</p>
+        <p className="font-bold">Climax AI</p>
         <div className="flex items-center gap-2 text-[.96rem]">
           <nav>About</nav>
           <nav>Contact</nav>
@@ -20,7 +20,7 @@ export default function Home() {
       </header>
 
       {/* Hero section */}
-      <main className="w-full px-3 sm:py-32 sm:px-6 py-28 bg-gradient-to-t from-gray-200 via-[#fcfcfc] to-[#fdfdfd]">
+      <main className="w-full px-3 sm:py-32 sm:px-6 py-28 bg-gradient-to-t from-gray-300 via-[#fcfcfc] to-[#fdfdfd]">
         {/* Hero text */}
         <div className="w-full m-auto sm:w-[60%] md:w-[55%] text-center mb-10">
           <p className="font-extrabold capitalize text-4xl sm:text-5xl">
@@ -68,7 +68,7 @@ export default function Home() {
       </main>
 
       {/* Benefits section */}
-      <section className="bg-gray-950 text-[#fdfdfd] px-3 py-28 sm:px-12 -mt-4 rounded-3xl">
+      <section className="bg-gray-950 relative z-10 text-[#fdfdfd] px-3 py-24 sm:px-12 -mt-4 rounded-3xl">
         {/* First benefit */}
         <section className="flex flex-col sm:flex-row gap-6 sm:gap-8">
           <div className="w-full sm:w-[50%]">
@@ -155,14 +155,150 @@ export default function Home() {
       </section>
 
       {/* pricing */}
-      <section>
-        <p>Pricing section</p>
+      <section className="px-3 py-24 sm:px-12 -mt-4 bg-gradient-to-b from-gray-300 via-[#fcfcfc] to-[#fdfdfd]">
+        <section className="flex mt-[8rem] flex-col sm:flex-row gap-6 sm:gap-8">
+          <div className="w-full sm:w-[50%]">
+            <p className="text-2xl sm:text-3xl">AI Service Packages</p>
+            <p className="text-2xl sm:text-3xl text-gray-500">
+              Custom terms rooted in deep understanding of startups
+            </p>
+          </div>
+          <div className="w-full sm:w-[50%]">
+            <p className="text-[.94rem]">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut enim
+              suscipit neque, error nostrum illo modi. Laborum assumenda
+              pariatur repellat!
+            </p>
+          </div>
+        </section>
+        <section className="grid grid-cols-1 sm:grid-cols-3 my-8 sm:my-10 gap-6">
+          {/* Regular package */}
+          <div className="rounded-md bg-gray-100 flex flex-col justify-between cursor-pointer hover:shadow-2xl transition-all p-3 shadow-md">
+            <div>
+              <p className="text-xl font-bold mb-1 text-gray-500">Regular</p>
+              <p className="text-2xl sm:text-4xl font-extrabold">$1,500</p>
+              <p className="text-[.97rem] my-3">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta
+                harum quo officia dolorum cum cupiditate officiis voluptatum
+                minima dolorem aspernatur.
+              </p>
+              <ul>
+                <li className="flex items-center gap-1">
+                  <span>*</span>
+                  <span>Lorem ipsum dolor sit amet.</span>
+                </li>
+                <li className="flex items-center gap-1">
+                  <span>*</span>
+                  <span>Lorem ipsum dolor sit amet.</span>
+                </li>
+                <li className="flex items-center gap-1">
+                  <span>*</span>
+                  <span>Lorem ipsum dolor sit amet.</span>
+                </li>
+                <li className="flex items-center gap-1">
+                  <span>*</span>
+                  <span>Lorem ipsum dolor sit amet.</span>
+                </li>
+              </ul>
+            </div>
+            <button className="block w-full mt-8 sm:mt-0 border font-semibold border-gray-950 rounded-full px-2 py-1">
+              Get Package
+            </button>
+          </div>
+          {/* Main package */}
+          <div className="rounded-md bg-[#fdfdfd] cursor-pointer hover:shadow-2xl transition-all p-3 shadow-md">
+            <div>
+              <p className="text-xl font-bold text-gray-500 mb-1">Main</p>
+              <p className="text-2xl sm:text-4xl font-extrabold">$3,500</p>
+              <p className="text-[.97rem] my-3">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta
+                harum quo officia dolorum cum cupiditate officiis voluptatum
+                minima dolorem aspernatur.
+              </p>
+              <ul>
+                <li className="flex items-center gap-1">
+                  <span>*</span>
+                  <span>Lorem ipsum dolor sit amet.</span>
+                </li>
+                <li className="flex items-center gap-1">
+                  <span>*</span>
+                  <span>Lorem ipsum dolor sit amet.</span>
+                </li>
+                <li className="flex items-center gap-1">
+                  <span>*</span>
+                  <span>Lorem ipsum dolor sit amet.</span>
+                </li>
+                <li className="flex items-center gap-1">
+                  <span>*</span>
+                  <span>Lorem ipsum dolor sit amet.</span>
+                </li>
+                <li className="flex items-center gap-1">
+                  <span>*</span>
+                  <span>Lorem ipsum dolor sit amet.</span>
+                </li>
+                <li className="flex items-center gap-1">
+                  <span>*</span>
+                  <span>Lorem ipsum dolor sit amet.</span>
+                </li>
+                <li className="flex items-center gap-1">
+                  <span>*</span>
+                  <span>Lorem ipsum dolor sit amet.</span>
+                </li>
+              </ul>
+            </div>
+            <button className="block bg-gray-950 font-semibold w-full mt-8 text-[#fdfdfd] rounded-full px-2 py-1">
+              Get Package
+            </button>
+          </div>
+          {/* Another */}
+          <div className="rounded-md bg-gray-100 flex flex-col justify-between cursor-pointer hover:shadow-2xl transition-all p-3 shadow-md">
+            <div>
+              <p className="text-xl font-bold mb-1 text-gray-500">
+                Pro-Regular
+              </p>
+              <p className="text-2xl sm:text-4xl font-extrabold">$2,250</p>
+              <p className="text-[.97rem] my-3">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta
+                harum quo officia dolorum cum cupiditate officiis voluptatum
+                minima dolorem aspernatur.
+              </p>
+              <ul>
+                <li className="flex items-center gap-1">
+                  <span>*</span>
+                  <span>Lorem ipsum dolor sit amet.</span>
+                </li>
+                <li className="flex items-center gap-1">
+                  <span>*</span>
+                  <span>Lorem ipsum dolor sit amet.</span>
+                </li>
+                <li className="flex items-center gap-1">
+                  <span>*</span>
+                  <span>Lorem ipsum dolor sit amet.</span>
+                </li>
+                <li className="flex items-center gap-1">
+                  <span>*</span>
+                  <span>Lorem ipsum dolor sit amet.</span>
+                </li>
+                <li className="flex items-center gap-1">
+                  <span>*</span>
+                  <span>Lorem ipsum dolor sit amet.</span>
+                </li>
+              </ul>
+            </div>
+            <button className="block w-full mt-8 sm:mt-0 border font-semibold border-gray-950 rounded-full px-2 py-1">
+              Get Package
+            </button>
+          </div>
+        </section>
       </section>
 
-      {/* last section */}
-      <section>
-        <p>Amobi Isidor Section</p>
-      </section>
+      {/* Footer section */}
+      <footer className="w-full px-3 py-2">
+        <div className="w-max m-auto">
+          &copy; Copyright{" "}
+          <span className="font-bold">Climax AI Solutions</span> 2025
+        </div>
+      </footer>
     </>
   );
 }
