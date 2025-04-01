@@ -2,6 +2,8 @@ import Link from "next/link";
 import Image from "next/image";
 import image from "../../public/investor.jpg";
 
+import { CheckIcon } from "lucide-react";
+
 export default function Home() {
   return (
     <>
@@ -68,7 +70,7 @@ export default function Home() {
       </main>
 
       {/* Benefits section */}
-      <section className="bg-gray-950 relative z-10 text-[#fdfdfd] px-3 py-24 sm:px-12 -mt-4 rounded-3xl">
+      <section className="bg-gray-950 relative z-10 text-[#fdfdfd] px-3 py-16 sm:px-12 -mt-4 rounded-3xl">
         {/* First benefit */}
         <section className="flex flex-col sm:flex-row gap-6 sm:gap-8">
           <div className="w-full sm:w-[50%]">
@@ -104,7 +106,7 @@ export default function Home() {
           </div>
         </section>
         {/* second benefit */}
-        <section className="flex mt-[8rem] flex-col sm:flex-row gap-6 sm:gap-8">
+        <section className="flex mt-[6rem] flex-col sm:flex-row gap-6 sm:gap-8">
           <div className="w-full sm:w-[50%]">
             <p className="text-2xl sm:text-3xl">Growth Funding</p>
             <p className="text-2xl sm:text-3xl text-gray-500">
@@ -155,8 +157,8 @@ export default function Home() {
       </section>
 
       {/* pricing */}
-      <section className="px-3 py-24 sm:px-12 -mt-4 bg-gradient-to-b from-gray-300 via-[#fcfcfc] to-[#fdfdfd]">
-        <section className="flex mt-[8rem] flex-col sm:flex-row gap-6 sm:gap-8">
+      <section className="px-3 py-10 sm:px-12 -mt-4 bg-gradient-to-b from-[#fbfbfb] via-[#fcfcfc] to-[#fdfdfd]">
+        <section className="flex mt-[4rem] flex-col sm:flex-row gap-6 sm:gap-8">
           <div className="w-full sm:w-[50%]">
             <p className="text-2xl sm:text-3xl">AI Service Packages</p>
             <p className="text-2xl sm:text-3xl text-gray-500">
@@ -184,19 +186,19 @@ export default function Home() {
               </p>
               <ul>
                 <li className="flex items-center gap-1">
-                  <span>*</span>
+                  <CheckIcon className="text-green-500 size-4 font-extrabold" />
                   <span>Lorem ipsum dolor sit amet.</span>
                 </li>
                 <li className="flex items-center gap-1">
-                  <span>*</span>
+                  <CheckIcon className="text-green-500 size-4 font-extrabold" />
                   <span>Lorem ipsum dolor sit amet.</span>
                 </li>
                 <li className="flex items-center gap-1">
-                  <span>*</span>
+                  <CheckIcon className="text-green-500 size-4 font-extrabold" />
                   <span>Lorem ipsum dolor sit amet.</span>
                 </li>
                 <li className="flex items-center gap-1">
-                  <span>*</span>
+                  <CheckIcon className="text-green-500 size-4 font-extrabold" />
                   <span>Lorem ipsum dolor sit amet.</span>
                 </li>
               </ul>
@@ -217,31 +219,31 @@ export default function Home() {
               </p>
               <ul>
                 <li className="flex items-center gap-1">
-                  <span>*</span>
+                  <CheckIcon className="text-green-500 size-4 font-extrabold" />
                   <span>Lorem ipsum dolor sit amet.</span>
                 </li>
                 <li className="flex items-center gap-1">
-                  <span>*</span>
+                  <CheckIcon className="text-green-500 size-4 font-extrabold" />
                   <span>Lorem ipsum dolor sit amet.</span>
                 </li>
                 <li className="flex items-center gap-1">
-                  <span>*</span>
+                  <CheckIcon className="text-green-500 size-4 font-extrabold" />
                   <span>Lorem ipsum dolor sit amet.</span>
                 </li>
                 <li className="flex items-center gap-1">
-                  <span>*</span>
+                  <CheckIcon className="text-green-500 size-4 font-extrabold" />
                   <span>Lorem ipsum dolor sit amet.</span>
                 </li>
                 <li className="flex items-center gap-1">
-                  <span>*</span>
+                  <CheckIcon className="text-green-500 size-4 font-extrabold" />
                   <span>Lorem ipsum dolor sit amet.</span>
                 </li>
                 <li className="flex items-center gap-1">
-                  <span>*</span>
+                  <CheckIcon className="text-green-500 size-4 font-extrabold" />
                   <span>Lorem ipsum dolor sit amet.</span>
                 </li>
                 <li className="flex items-center gap-1">
-                  <span>*</span>
+                  <CheckIcon className="text-green-500 size-4 font-extrabold" />
                   <span>Lorem ipsum dolor sit amet.</span>
                 </li>
               </ul>
@@ -264,23 +266,23 @@ export default function Home() {
               </p>
               <ul>
                 <li className="flex items-center gap-1">
-                  <span>*</span>
+                  <CheckIcon className="text-green-500 size-4 font-extrabold" />
                   <span>Lorem ipsum dolor sit amet.</span>
                 </li>
                 <li className="flex items-center gap-1">
-                  <span>*</span>
+                  <CheckIcon className="text-green-500 size-4 font-extrabold" />
                   <span>Lorem ipsum dolor sit amet.</span>
                 </li>
                 <li className="flex items-center gap-1">
-                  <span>*</span>
+                  <CheckIcon className="text-green-500 size-4 font-extrabold" />
                   <span>Lorem ipsum dolor sit amet.</span>
                 </li>
                 <li className="flex items-center gap-1">
-                  <span>*</span>
+                  <CheckIcon className="text-green-500 size-4 font-extrabold" />
                   <span>Lorem ipsum dolor sit amet.</span>
                 </li>
                 <li className="flex items-center gap-1">
-                  <span>*</span>
+                  <CheckIcon className="text-green-500 size-4 font-extrabold" />
                   <span>Lorem ipsum dolor sit amet.</span>
                 </li>
               </ul>

@@ -37,7 +37,7 @@ export default function Login() {
       toast.dismiss(toastId);
       toast.success("Login successful!");
       setTimeout(() => {
-        router.push("/login");
+        router.push("/dashboard");
       }, 1500);
     } catch (e) {
       console.log(e.response);
@@ -45,6 +45,7 @@ export default function Login() {
       toast.error("Login failed!");
     }
   }
+
   return (
     <>
       <Toaster />
