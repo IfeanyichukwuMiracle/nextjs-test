@@ -6,7 +6,15 @@ const UserModel = new mongoose.Schema({
     required: [true, "email is required"],
     unique: [true, "email exists already"],
   },
+  fullname: {
+    type: String,
+    required: [true, "fullname is required"],
+  },
+  password: {
+    type: String,
+    required: [true, "password is required"],
+  },
 });
 
-const User = mongoose.model("User", UserModel) || mongoose.models.user;
+const User = mongoose.models.User || mongoose.model("User", UserModel);
 export default User;

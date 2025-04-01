@@ -2,6 +2,8 @@
 
 import Link from "next/link";
 import { useState } from "react";
+import toast, { Toaster } from "react-hot-toast";
+import { useRouter } from "next/navigation";
 
 import axios from "axios";
 
@@ -12,20 +14,55 @@ export default function Signup() {
     password: "",
     confirmPassword: "",
   });
+  const router = useRouter();
 
   function handleChange(e) {
     setUser((prevUser) => ({ ...prevUser, [e.target.name]: e.target.value }));
   }
   async function handleSubmit(e) {
     e.preventDefault();
-    window.alert("Submitted!");
+    const toastId = toast.loading("Signing you up!");
 
-    const res = await axios.get("/api/login");
-    console.log(res.data);
+    // check if all fields are filled
+    const entries = Object.values(user);
+    if (entries.includes("")) {
+      toast.dismiss(toastId);
+      toast.error("Fields cannot be empty!");
+      return;
+    }
+
+    // check if password === confirmPWd
+    if (user.password !== user.confirmPassword) {
+      toast.dismiss(toastId);
+      toast.error("Passwords do not match!");
+      return;
+    }
+
+    // post
+    try {
+      const res = await axios.post("/api/signup", user);
+      console.log(res.data);
+      setUser({
+        fullname: "",
+        email: "",
+        password: "",
+        confirmPassword: "",
+      });
+      toast.dismiss(toastId);
+      toast.success("Signup successful!");
+      setTimeout(() => {
+        router.push("/login");
+      }, 1500);
+    } catch (e) {
+      console.log(e.response);
+      toast.dismiss(toastId);
+      toast.error("Signup failed!");
+    }
   }
 
   return (
     <>
+      <Toaster />
       {/* Header */}
       <header className="w-full fixed top-0 bg-[#fdfdfd] z-50 flex px-3 py-3  justify-between items-center">
         <Link href="/">
